@@ -1,5 +1,5 @@
 # Overview
-** This is a work in progress and only intended for hobbyists. **
+**This is a work in progress and only intended for hobbyists.**
 
 Collect statistics about your 5G TMobile Home Internet connection:
 - RSRP
@@ -27,8 +27,8 @@ go run cmds/db/cli.go migrate -d tmo.db
 
 ## Collect Statistics
 ```commandline
->> export GATEWAY_USERNAME=your_username
->> export GATEWAY_PASSWORD=your_password
+>> export GATEWAY_USERNAME=your_gateway_admin_username
+>> export GATEWAY_PASSWORD=your_gateway_admin_password
 >> export GATEWAY_POLL_FREQ=1m
 
 # Begin polling and persist the statistics to a sqlite database, `tmo.db`.
