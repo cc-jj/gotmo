@@ -18,6 +18,11 @@ Install dependencies:
 go mod tidy
 ```
 
+Migrate the database:
+```commandline
+go run cmds/db/cli.go migrate -d tmo.db
+```
+
 # Usage
 
 ## Collect Statistics
