@@ -10,8 +10,6 @@ Collect statistics about your 5G TMobile Home Internet connection:
 # Setup
 Prerequisites:
 - Go 1.24
-- [SQLC](https://docs.sqlc.dev/en/latest/overview/install.html)
-- [SQLite](https://www.sqlite.org/index.html)
 
 Install dependencies:
 ```commandline
@@ -78,7 +76,7 @@ go run cmds/db/cli.go migrate -d tmo.db
 
 2. Regenerate the Go SQL code
 ```commandline
-sqlc generate
+go tool sqlc generate
 ```
 
 ## The API GET gateway/?get=all Response
